@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f1f5f8;
+
+}
+:root{
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+h2{
+  font-size: 1.6rem;
+    text-align: center;
+    margin-top: 65px;
+    text-shadow: 2px 2px 4px #ff7b7b;
+}
+.form{
+  margin-top: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    margin-bottom: 1.6rem;
+}
+.form label:first-of-type{
+  padding-left: 19px
+}
+form{
+  display: grid;
+  grid-template-columns: 40% 200px;
+  
+  /* justify-content: space-between; */
+  margin-top: 39px;
+  column-gap: 36px;
+  
+}
+form input{
+
+
+  margin-left: 19px;
+  height: 38px;
+}
+form .select1{
+
+}
+section{
+  display: grid;
+  grid-template-columns: repeat(4,calc(100% / 4));
+  margin-top: 40px;
+}
+section aside{
+  width: 85%;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+section aside a{
+  display: block;
+  width: 100%;
+}
+section aside img{
+  width: 100%;
+  height: 412px;
+}
+section aside footer{
+  position: absolute;
+    bottom: -71px;
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+    width: 100%;
+    padding-top: 15px;
+    transition: all .4s ease-in-out;
+}
+section aside footer span{
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  padding-left: 22px;
+}
+section aside:hover footer{
+  bottom: 0;
+}
